@@ -1,0 +1,72 @@
+/*styling.css*/
+body {
+    background: url(images/picture.jpg) center center fixed;
+    background-size: cover;
+    /* easier than setting width height 100 100.  */
+    color: #fff;
+}
+
+/*title*/
+#header{
+    text-align: center;
+    font-size: 7vw;
+}
+
+/*Lap*/ 
+/* This is the time on the right hand side and not the table */
+#lap{
+    text-align: right;
+    font-size: 4vw;
+}
+
+/*Time*/
+#time{
+    text-align: center;
+    font-size: 10vw;
+}
+
+/*Buttons*/
+#controlsContainer{
+    margin-bottom: 100px;   
+}
+
+.control{
+    color: white;
+    background-color: #d7A04e;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 100%;
+    text-align: center;
+    padding: 20% 0;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+
+.control:active{
+    background-color: #fff;
+    color: #d7A04e;
+}
+
+/*laps*/
+#laps{
+    max-height: 270px;
+    /* overflow-y: scroll; */
+}
+
+.lap{
+    /* note THESE ARE THE CLASSES AND NOT THE IDS. SO THESE ARE ASSOCIATED TO THE TABLE>  */
+    height: 50px;
+    border-bottom: 1px solid white;
+    /* creates the table structure.  */
+    margin: 15px;
+}
+/* as lap time title and lap time are in the table at the bottom, the simplest way to display them so they arent on top of one another (both created as divs) is float left and right.  */
+.laptimetitle{
+    font-size: 2em;
+    float: left;
+}
+
+.laptime{
+    font-size: 2em;
+    float: right;
+}
